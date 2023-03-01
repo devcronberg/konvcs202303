@@ -1,0 +1,148 @@
+site_name: Grundlæggende C#
+use_directory_urls: false
+theme:
+    name: material
+    custom_dir: theme
+    features:
+        - navigation.instant
+        # - navigation.tracking
+        - navigation.tabs
+        # - navigation.top
+        - navigation.tabs.sticky
+        # - navigation.sections
+        - navigation.expand
+        - navigation.prune
+        - navigation.tracking
+        - content.code.annotate
+        - content.code.copy
+        - toc.follow
+        # - toc.integrate
+
+    font:
+        text: Roboto
+        code: Roboto Mono
+    palette:
+        - scheme: default
+          primary: indigo
+          accent: indigo
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+        - scheme: slate
+          primary: black
+          accent: white
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+copyright: Copyright &copy; 2022 Michell Cronberg
+
+extra:
+    social:
+        - icon: fontawesome/solid/up-right-from-square
+          link: mailto:michell@cronbeg.dk
+
+        - icon: fontawesome/brands/linkedin
+          link: https://goo.gl/iVjaqF
+
+    generator: false
+    videoer: false
+    opgaver: true
+
+# Extensions
+markdown_extensions:
+    - attr_list
+    - abbr
+    - md_in_html
+    - pymdownx.snippets
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - tables
+    - smarty
+    - admonition
+    - pymdownx.details
+    - pymdownx.magiclink:
+          repo_url_shortener: true
+    ## https://facelessuser.github.io/pymdown-extensions/
+    ## https://github.com/facelessuser/pymdown-extensions/blob/main/mkdocs.yml
+    # extra_css:
+    #   - stylesheets/extra.css
+
+extra_javascript:
+    - javascripts/iframe-worker.js
+    - javascripts/tablesort.min.js
+    - javascripts/tablesort.js
+
+plugins:
+    - search:
+          lang: da
+    - localsearch # https://github.com/wilhelmer/mkdocs-localsearch
+    - mkdocs-video:
+          css_style:
+              width: "80%"
+              height: "22.172vw"
+    - macros
+#   - tags:
+#       tags_file: tags.md
+
+nav:
+    - Introduktion:
+          - index.md          
+          - 010_introcs.md
+          - 020_omcs.md
+          - 025_IntroduktiontilVS.md
+          - 030_KonsolApp.md
+    - Det grundlæggende:
+          - 040_simplevariabler.md
+          - 045_tegnogtekster.md
+          - 048_Konstanter.md
+          - 050_flow.md
+          - 060_metoder.md
+          - 065_Fejlhåndtering.md
+          - 070_Arrays.md
+          - 075_Samlinger.md
+    - Det objektorienterede:
+          - 080_Klasser.md
+          - 082_Stukturer.md
+          - 087_Hukommelsesteori.md
+          - 089_OOP.md
+          - 090_Indkapsling.md
+          - 100_Arv.md
+          - 105_Polymofi.md
+          - 110_Interfaces.md
+    - Det funktionsorienterede:
+          - 120_Delegates.md
+          - 125_Events.md
+    - Det videregående:          
+          - 150_LINQ2Objects.md
+          - 155_ASync.md
+          - 126_Avancerede_typer.md          
+          - 165_Kommunikation_med_filer.md
+          - 167_Kommunikation_over_HTTP.md
+          - 168_Kommunikation_med_databaser.md
+          - 175_Serialisering.md
+
+    - Diverse:
+          - 128_OperatorOverload.md
+          - 130_Generics.md          
+          - 170_Konfiguration.md
+          - 185_Globalisering.md
+          - 195_RegEx.md
+          - 160_XML.md
+          - 200_Reflection.md
+          - 169_ExpressionTrees.md
+          - 330_Terning.md
+          - 360_Optimering.md
+          - 400_Git.md
+          - 410_IntroduktionWinForm.md
+          - 420_IntroMonoGame.md
+          - 500_EkstraOpgaver.md
+          - Certificering/basiccert.md
+    - Opgaver: opgaver.md
+    - Links: links.md
