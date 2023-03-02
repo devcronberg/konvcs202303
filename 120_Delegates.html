@@ -1732,6 +1732,10 @@
 <h2 id="grundlggende-om-delegates">Grundlæggende om delegates</h2>
 <!-- > video:{ id:"cqetQl0N05", titel:"Grundlæggende om delegates", længde: 4 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Grundlæggende om delegates (4 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqetQl0N05" target="_blank">Se video</a></p>
+</div>
 <p>Vi har snakket om lokale og statiske reference til instanser på både heap og stack, men man kan også arbejde med referencer til metoder.</p>
 <p><img src='http://cdn.cronberg.dk/kurser/cs/hukommelse.png' height='' /></p>
 <p>Ideen med at kunne arbejde med reference til en eller flere metoder er typisk at afkoble implementation - udvikleren der ønsker at benytte vores klasse eller metode må sende en reference til kode han/hun ønsker afviklet i et givet situation.</p>
@@ -1742,6 +1746,10 @@
 <h2 id="hvad-kan-man-bruge-en-delegate-til">Hvad kan man bruge en delegate til</h2>
 <!-- > video:{ id:"cqet6f0NO7", titel:"Hvad kan man bruge en delegate til", længde: 12 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Hvad kan man bruge en delegate til (12 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqet6f0NO7" target="_blank">Se video</a></p>
+</div>
 <p>Man kunne forestille sig:</p>
 <ul>
 <li>finde elementer i en liste eller array ud fra et boolsk (true/false) resultat af en metode</li>
@@ -1754,6 +1762,10 @@
 <h2 id="definition-af-en-delegate">Definition af en delegate</h2>
 <!-- > video:{ id:"cqet6o0Ntx", titel:"Definition af en delegate", længde: 4 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Definition af en delegate (4 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqet6o0Ntx" target="_blank">Se video</a></p>
+</div>
 <p>Se <code>delegate</code> ligesom <code>class</code> - den definerer en skabelon for et objekt med referencer til metoder.</p>
 <p><img src='http://cdn.cronberg.dk/kurser/cs/delegate_type.png' height='' /></p>
 <p>En delegate kan placeres på namespace- og type-niveau (ligesom klasser, stukturer mv):</p>
@@ -1785,6 +1797,10 @@
 <h2 id="opret-et-delegate-objekt">Opret et delegate objekt</h2>
 <!-- > video:{ id:"cqet6u0Nut", titel:"Opret et delegate objekt", længde: 4 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Opret et delegate objekt (4 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqet6u0Nut" target="_blank">Se video</a></p>
+</div>
 <p>Når først en delegate er defineret kan der skabes objekter på flere måder</p>
 <ul>
 <li>brug af new til at oprette objekt</li>
@@ -1847,6 +1863,10 @@
 <h2 id="afvikling-af-metoder">Afvikling af metoder</h2>
 <!-- > video:{ id:"cqet6E0NU3", titel:"Afvikling af metoder", længde: 6 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Afvikling af metoder (6 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqet6E0NU3" target="_blank">Se video</a></p>
+</div>
 <p>Man kan afvikle metoder på flere måder</p>
 <ul>
 <li>bør checke for null!</li>
@@ -1891,6 +1911,10 @@
 <h2 id="flere-referencer-i-en-delegate">Flere referencer i en delegate</h2>
 <!-- > video:{ id:"cqet680Nvn", titel:"Flere referencer i en delegate", længde: 6 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Flere referencer i en delegate (6 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqet680Nvn" target="_blank">Se video</a></p>
+</div>
 <p>En delegate består af en <strong><em>liste</em></strong> af metoder så man kan både tilføje og fjerne referencer dynamisk.</p>
 <ul>
 <li>Alle bliver afviklet</li>
@@ -1945,6 +1969,10 @@
 <h2 id="fjern-referencer-fra-delegates">Fjern referencer fra delegates</h2>
 <!-- > video:{ id:"cqetXf0Nvz", titel:"Fjern referencer fra delegates", længde: 1 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Fjern referencer fra delegates (1 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqetXf0Nvz" target="_blank">Se video</a></p>
+</div>
 <p>Man kan fjerne referencer med <code>-=</code> og bør gøre det. Når man har med events/referencer at gøre kan man komme til at skabe et memoryleak - så værd bevidst om at en reference bør fjernes igen.</p>
 <p>Brugen af -= bliver erstatet af et kald til Remove().</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
@@ -2033,6 +2061,10 @@
 <h2 id="indbyggede-delegates">Indbyggede delegates</h2>
 <!-- > video:{ id:"cqetXU0Nxi", titel:"Indbyggede delegates", længde: 3 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Indbyggede delegates (3 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqetXU0Nxi" target="_blank">Se video</a></p>
+</div>
 <p>Der findes tre indbyggede generiske delegates</p>
 <ul>
 <li><strong>Action</strong></li>
@@ -2048,6 +2080,10 @@
 <h2 id="action">Action</h2>
 <!-- > video:{ id:"cqetXH0NyD", titel:"Action", længde: 4 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Action (4 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqetXH0NyD" target="_blank">Se video</a></p>
+</div>
 <p>Action dækker void metoder (med 16 argumenter), og typerne på argumenterne angives generisk ved erklæring. Således er følgende tre delegates erstattet af Action-delegates:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
@@ -2106,6 +2142,10 @@
 <h2 id="func">Func</h2>
 <!-- > video:{ id:"cqetXM0Nym", titel:"Func", længde: 4 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Func (4 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqetXM0Nym" target="_blank">Se video</a></p>
+</div>
 <p>Func dækker metoder med returværdi, og typen på argumenter og på returværdi angives generisk. Den sidst angivne type dækker returværdi - Eksempelvis <code>Func&lt;int, double, bool&gt; d1</code> svarer til <code>delegate bool d1(int a, double b)</code></p>
 <p>Således er følgende tre delegates erstattet af Func-delegates:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
@@ -2176,6 +2216,10 @@
 <h2 id="predicate">Predicate</h2>
 <!-- > video:{ id:"cqetle0N4C", titel:"Predicate", længde: 3 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Predicate (3 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqetle0N4C" target="_blank">Se video</a></p>
+</div>
 <p>Predicate dækker en metode med et argument der altid returnerer en bool, og typen på argumentet angives generisk. Eksempelvis benyttes en Predicate i mange Array/LINQ metoder - herunder findes det index hvor værdien = 6. FindIndex-metoden tager en Predicate (delegate som returnerer en bool med en int som argument) for at findes det konkrete indeks.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">};</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="kt">int</span><span class="w"> </span><span class="n">findes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="n">Array</span><span class="p">.</span><span class="n">FindIndex</span><span class="p">(</span><span class="n">array</span><span class="p">,</span><span class="w"> </span><span class="n">FindesTal</span><span class="p">);</span><span class="w">  </span><span class="c1">// 4</span>
@@ -2262,6 +2306,10 @@
 <h2 id="lambda-expressions">Lambda expressions</h2>
 <!-- > video:{ id:"cqetI60Nke", titel:"Lambda expressions", længde: 13 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Lambda expressions (13 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqetI60Nke" target="_blank">Se video</a></p>
+</div>
 <p>Lambda i C# er i virkeligheden ret kompleks og dækker over expressions trees og generering af dynamiske udtryk - men i sin simple form er det bare en anden og hurtigere måde at skrive en metode (sukker metode syntaks). Man kan også kalde det en anonym metode fordi en Lambda returnerer en delegate, og ikke i sig selv har et navn.</p>
 <p>Man kan skrive Lambda-udtryk på mange måder hvilket gør det lidt svært at lære, men når du først har styr på det er det en super effektiv måde at skrive kode på. Her er eksemplet fra tidligere med FindIndex - nu med lambda:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">array</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="m">7</span><span class="p">,</span><span class="w"> </span><span class="m">10</span><span class="w"> </span><span class="p">};</span>

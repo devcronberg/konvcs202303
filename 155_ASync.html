@@ -2149,6 +2149,10 @@ tre operationer, som tager 500 ms hver, kan afvikles nogenlunde uafhængigt af h
 <h2 id="brug-af-async-og-await-til-asynkrone-func-delegates">Brug af async og await til asynkrone func delegates</h2>
 <!-- > video:{ id:"cYeXI5x3Gq", titel:"Brug af async og await til asynkrone func delegates", længde: 3 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Brug af async og await til asynkrone func delegates (3 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cYeXI5x3Gq" target="_blank">Se video</a></p>
+</div>
 <p>Hvis der er tale om en asynkton metode der returnerer noget benyttes Task\&lt;T> klassen. Hvis man benytter await er resultatet jo allerede kendt, og man kan derfor tildele det direkte til en variabel af den korrekte type.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="kt">string</span><span class="w"> </span><span class="n">txt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">File</span><span class="p">.</span><span class="n">ReadAllTextAsync</span><span class="p">(</span><span class="s">@&quot;c:\temp\test.txt&quot;</span><span class="p">);</span>
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="kt">string</span><span class="p">[]</span><span class="w"> </span><span class="n">linjer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">File</span><span class="p">.</span><span class="n">ReadAllLinesAsync</span><span class="p">(</span><span class="s">@&quot;c:\temp\test.txt&quot;</span><span class="p">);</span>

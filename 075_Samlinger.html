@@ -1587,7 +1587,7 @@
 <p>Generics er en funktion i C#, der giver dig mulighed for at skabe fleksible og genanvendelige typer og metoder, der kan arbejde med forskellige datatyper uden at skulle skrive kode for hver enkelt type. Generics kan hjælpe dig med at reducere mængden af gentagende kode, og gør det også lettere at skrive mere generiske algoritmer, der kan arbejde med forskellige datatyper.</p>
 <p>For at forstå generics i C#, kan du begynde med at lære de grundlæggende koncepter og syntaks for generiske typer og metoder. Her er nogle centrale begreber at overveje:</p>
 <ul>
-<li>Generisk klasse: En generisk klasse i C# er en klasse, der er parameteriseret over en eller flere typer. Du kan oprette en generisk klasse ved at definere en typeparameter i parentes efter klassenavnet. Typeparametre er typisk navngivet med store bogstaver for at adskille dem fra almindelige variabelnavne.</li>
+<li>Generisk klasse: En generisk klasse i C# er en klasse, der er parameteriseret over en eller flere typer. Du kan oprette en generisk klasse ved at definere en typeparameter i firkantet parentes efter klassenavnet. Typeparametre er typisk navngivet med store bogstaver for at adskille dem fra almindelige variabelnavne.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">MyGenericClass</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">myGenericField</span><span class="p">;</span>
@@ -1598,7 +1598,7 @@
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="p">}</span>
 </code></pre></div>
 <ul>
-<li>Generisk metode: En generisk metode er en metode, der er parameteriseret over en eller flere typer. Du kan oprette en generisk metode ved at definere en typeparameter i parentes før metodenavnet.</li>
+<li>Generisk metode: En generisk metode er en metode, der er parameteriseret over en eller flere typer. Du kan oprette en generisk metode ved at definere en typeparameter i firkantet parentes før metodenavnet.</li>
 </ul>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">MyGenericMethod</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">myGenericParameter</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">myGenericParameter</span><span class="p">;</span>
@@ -1619,10 +1619,18 @@
 <h2 id="overordnet-om-samlinger">Overordnet om samlinger</h2>
 <!-- > video:{ id:"cqefIt0rjn", titel:"Overordnet om samlinger", længde: 4 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Overordnet om samlinger (4 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqefIt0rjn" target="_blank">Se video</a></p>
+</div>
 <p>Der findes mange forskellige strukturer der kan benyttes til opbevare data i C#. System.Array (standard array) er en type, men C# tilbyder en masse andre og langt mere effektive strukturer. I de første versioner af .NET var klasser under System.Collection de eneste tilgængelige, men i de senere versioner er samlinger (collections) under System.Collections.Generic dukket op. De er langt mere effektive end på arrays og &ldquo;de gamle&rdquo; collection-klasser, og du bør derfor fokusere på disse.</p>
 <h2 id="typesvage-samlinger">Typesvage samlinger</h2>
 <!-- > video:{ id:"cqefIg0rjP", titel:"Typesvage samlinger", længde: 6 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Typesvage samlinger (6 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqefIg0rjP" target="_blank">Se video</a></p>
+</div>
 <ul>
 <li>
 <p>Findes en del Collection-klasser under System.Collection - bla</p>
@@ -1664,6 +1672,10 @@
 <h2 id="typestrke-samlinger">Typestærke samlinger</h2>
 <!-- > video:{ id:"cqef260rXY", titel:"Typestærke samlinger", længde: 6 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Typestærke samlinger (6 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqef260rXY" target="_blank">Se video</a></p>
+</div>
 <p>Anderledes er det med de typestærke collections fra System.Collections.Generics</p>
 <ul>
 <li>Benyt &lt;&gt; for at angive typen</li>
@@ -1678,6 +1690,10 @@
 <h2 id="list">List&lt;&gt;</h2>
 <!-- > video:{ id:"cqef230rlD", titel:"List", længde: 4 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video List (4 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqef230rlD" target="_blank">Se video</a></p>
+</div>
 <p>En List&lt;&gt; kan sammenlignes med et dynamisk array, og indeholder en masse metoder. Collection-klassen er langt mere effektiv end arrays, og du vil sikkert benytte denne klasse til at opbevare data i 80-90 procent af tilfældene.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Generic</span><span class="p">.</span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="w"> </span><span class="n">lst</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="n">Collections</span><span class="p">.</span><span class="n">Generic</span><span class="p">.</span><span class="n">List</span><span class="o">&lt;</span><span class="kt">string</span><span class="o">&gt;</span><span class="p">();</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">lst</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="s">&quot;a&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// kan kun håndtere en streng</span>
@@ -1745,6 +1761,10 @@
 <h2 id="stack-lifo">Stack&lt;&gt; (LIFO)</h2>
 <!-- > video:{ id:"cqef2a0rIb", titel:"Stack", længde: 3 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Stack (3 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqef2a0rIb" target="_blank">Se video</a></p>
+</div>
 <ul>
 <li>Last in - First out</li>
 <li>Forestil dig en stabel tallerkner</li>
@@ -1782,6 +1802,10 @@
 <h2 id="queue-fifo">Queue&lt;&gt; (FIFO)</h2>
 <!-- > video:{ id:"cqef2g0rIG", titel:"Queue", længde: 3 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Queue (3 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqef2g0rIG" target="_blank">Se video</a></p>
+</div>
 <ul>
 <li>First In - First Out</li>
 <li>Forestil dig køen ved en kasse i et supermarked</li>
@@ -1811,6 +1835,10 @@
 <h2 id="dictionary">Dictionary&lt;,&gt;</h2>
 <!-- > video:{ id:"cqefoh0rom", titel:"Dictionary", længde: 3 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Dictionary (3 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqefoh0rom" target="_blank">Se video</a></p>
+</div>
 <ul>
 <li>Nøgle og værdi struktur</li>
 <li>Der skal både oprettes en type af nøglen og en type af værdien</li>

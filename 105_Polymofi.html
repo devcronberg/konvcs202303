@@ -1603,6 +1603,10 @@
 <h2 id="grundlggende-om-polymorfi">Grundlæggende om polymorfi</h2>
 <!-- > video:{ id:"cqeQof0UpO", titel:"Grundlæggende om polymorfi", længde: 7 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Grundlæggende om polymorfi (7 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqeQof0UpO" target="_blank">Se video</a></p>
+</div>
 <p><img src='http://cdn.cronberg.dk/kurser/cs/polymorfi.png' height='' /></p>
 <p>Helt grundlæggende fungerer de to former for polymorfi ved at runtime ved, at et medlem med 100% sikkerhed findes i et objekt (enten grundet arv eller implementering af interface). Det kan udnyttes til at lade runtime finde og afvikle den korrekte metode.</p>
 <h3 id="eksempel-brugt-i-dette-modul">Eksempel brugt i dette modul</h3>
@@ -1611,6 +1615,10 @@
 <h2 id="virtuelle-metoder">Virtuelle metoder</h2>
 <!-- > video:{ id:"cqeo3Q0gv1", titel:"Virtuelle metoder", længde: 6 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Virtuelle metoder (6 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqeo3Q0gv1" target="_blank">Se video</a></p>
+</div>
 <p>Hvis en metode erklæres som virtuel kan børn &ldquo;overskrive&rdquo; og tilføje egen implementation</p>
 <p>Se denne definitation</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">internal</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Kæledyr</span><span class="w"> </span><span class="p">{</span>
@@ -1681,6 +1689,10 @@
 <h2 id="override-af-tostring">Override af ToString()</h2>
 <!-- > video:{ id:"cqeo3b0gvG", titel:"Den virtuelle ToString()", længde: 6 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Den virtuelle ToString() (6 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqeo3b0gvG" target="_blank">Se video</a></p>
+</div>
 <p>Alle typer arver fra System.Object, og her er flere virtuelle metoder - blandt andet ToString() som tit overskrives. Se følgende:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">Kæledyr</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Kæledyr</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Navn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;a&quot;</span><span class="w"> </span><span class="p">};</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">Fugl</span><span class="w"> </span><span class="n">f</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Fugl</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">Navn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Hans&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">HåndTam</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="w"> </span><span class="p">};</span>
@@ -1756,6 +1768,10 @@
 <h2 id="abstrakte-klasser">Abstrakte klasser</h2>
 <!-- > video:{ id:"cqeo300gwn", titel:"Abstrakte klasser", længde: 3 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Abstrakte klasser (3 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqeo300gwn" target="_blank">Se video</a></p>
+</div>
 <p>Nogle gange giver det mening at sikre, at man ikke skabe en instans af en klasse - eksempelvis klassen Kæledyr. Ved at gøre klasse abstrakt kan man ikke skabe en instans men udelukkende arve fra den:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="k">internal</span><span class="w"> </span><span class="k">abstract</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Kæledyr</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="p">{</span>
@@ -1799,6 +1815,10 @@
 <h2 id="abstrakte-metoder">Abstrakte metoder</h2>
 <!-- > video:{ id:"cqeo3y0gwB", titel:"Abstrakte metoder", længde: 4 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Abstrakte metoder (4 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqeo3y0gwB" target="_blank">Se video</a></p>
+</div>
 <p>Ved at gøre klassen abstrakt kan man også skabe abstrakte metoder. Det gør det muligt (som virtual) at overskrive en metode, men fordi klassen er abstrakt (og man dermed ikke kan skabe en instans), er der ingen grund til implementering i den abstrakte klasse. Til gengæld skal metodens signatur beskrives:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="k">internal</span><span class="w"> </span><span class="k">abstract</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Kæledyr</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">{</span>
@@ -1845,6 +1865,10 @@
 <h2 id="referencer">Referencer</h2>
 <!-- > video:{ id:"cqeo0f0gyG", titel:"Mor kan altid pege på sine børn", længde: 17 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Mor kan altid pege på sine børn (17 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqeo0f0gyG" target="_blank">Se video</a></p>
+</div>
 <p>Der kan altid skabes en reference til et barn gennem mors type (også - eller måske især - hvis den er abstrakt).</p>
 <p>Med udgangspunkt i følgende:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="k">internal</span><span class="w"> </span><span class="k">abstract</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Kæledyr</span>
@@ -1965,6 +1989,10 @@
 <h2 id="polymorfi-og-samlinger">Polymorfi og samlinger</h2>
 <!-- > video:{ id:"cqeo0t0gaX", titel:"Polymorfi og samlinger", længde: 6 } -->
 
+<div class="admonition note">
+<p class="admonition-title"> Video Polymorfi og samlinger (6 min.)</p>
+<p><a class="md-button md-button--primary" href="https://mcronberg.screencasthost.com/watch/cqeo0t0gaX" target="_blank">Se video</a></p>
+</div>
 <p>Brug af virtuelle/abstrakte medlemmer, samt det faktum at &ldquo;mor&rdquo; altid kan pege på &ldquo;børn&rdquo;, kan blandt udnyttes i samlinger.</p>
 <p>Her er en liste af kæledyr, og da både en Hund og en Fugl ER kæledyr kan de tildeles samme liste/array/kø/stack mv:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">List</span><span class="o">&lt;</span><span class="n">Kæledyr</span><span class="o">&gt;</span><span class="w"> </span><span class="n">lst</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">List</span><span class="o">&lt;</span><span class="n">Kæledyr</span><span class="o">&gt;</span><span class="p">();</span>
